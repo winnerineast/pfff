@@ -49,7 +49,7 @@ libcamlzip.a: $(C_OBJS)
 .mli.cmi:
 	$(OCAMLC) -c $<
 .ml.cmo:
-	$(OCAMLC) -c $<
+	$(OCAMLC) -c -unsafe-string $<
 .ml.cmx:
 	$(OCAMLOPT) -c $<
 .c.o:
