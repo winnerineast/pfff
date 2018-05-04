@@ -123,7 +123,7 @@ OPTFLAGS=-thread
 OPTBIN ?= #.opt
 
 # coupling: ../Makefile.common, but want independent commons/
-OCAMLCFLAGS ?= -g -dtypes $(OCAMLCFLAGS_EXTRA) -thread -w +9
+OCAMLCFLAGS ?= -g -dtypes $(OCAMLCFLAGS_EXTRA) -thread -w +9 -unsafe-string
 
 # The OCaml tools.
 OCAMLC =ocamlc$(OPTBIN) $(OCAMLCFLAGS) $(INCLUDES)

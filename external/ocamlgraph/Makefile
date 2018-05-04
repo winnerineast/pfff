@@ -47,8 +47,8 @@ SRCDIR	= src
 LIBDIR	= lib
 
 INCLUDES= -I $(SRCDIR) -I $(LIBDIR)
-BFLAGS = $(INCLUDES) -g -dtypes
-OFLAGS = $(INCLUDES) -for-pack Ocamlgraph
+BFLAGS = $(INCLUDES) -g -dtypes -unsafe-string
+OFLAGS = $(INCLUDES) -for-pack Ocamlgraph -unsafe-string
 
 
 # main target

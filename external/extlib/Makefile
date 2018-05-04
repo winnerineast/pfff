@@ -16,7 +16,7 @@ SRC = $(MLI) $(MODULES:=.ml) extLib.ml
 all: extLib.cma
 
 extLib.cma: $(SRC)
-	ocamlc $(OCAMLCFLAGS_EXTRA) -a -o extLib.cma $(SRC)
+	ocamlc $(OCAMLCFLAGS_EXTRA) -unsafe-string -a -o extLib.cma $(SRC)
 
 opt: extLib.cmxa
 all.opt: extLib.cmxa

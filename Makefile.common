@@ -53,7 +53,7 @@ else
 WARNING_FLAGS?=-w +A-4-29-6-45-41-44-48
 endif
 
-OCAMLCFLAGS=-g -thread -dtypes $(WARNING_FLAGS) $(OCAMLCFLAGS_EXTRA) 
+OCAMLCFLAGS=-g -thread -dtypes $(WARNING_FLAGS) $(OCAMLCFLAGS_EXTRA) -unsafe-string
 
 # This flag is also used in subdirectories so don't change its name here
 # the -w y is to silence errors on the visitor_xxx files with the unused
