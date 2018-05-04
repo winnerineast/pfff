@@ -8,6 +8,9 @@ For codemap and codegraph:
  install xquartz at http://xquartz.macosforge.org/landing/
  $ brew install gtk+
  $ brew install cairo
+ $ brew install ocaml-findlib ocaml-num ocamlsdl
+
+Without the last step above, you will hit build error "Cannot find nums.cma etc".
 
 For codequery:
  $ brew install swi-prolog
